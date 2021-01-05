@@ -42,9 +42,9 @@ function initTodo() {
       .getElementById(`${todoListItems[i].id}`)
       .addEventListener("click", function (e) {
         let selectedItem = document.getElementById(e.target.id);
+        let value = +e.target.id;
 
         if (selectedItem.checked) {
-          let value = +e.target.id;
           for (let j = 0; j < todoListItems.length; j++) {
             if (value === todoListItems[j].id) {
               todoListItems[j]["isChecked"] = true;
