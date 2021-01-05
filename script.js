@@ -4,8 +4,8 @@ const todoList = document.getElementById("todoList");
 const todoListItems = [
   { id: 1, todo: "Milk", isChecked: false },
   { id: 2, todo: "Eggs", isChecked: false },
-  { id: 3, todo: "Bread", isChecked: true },
-  { id: 4, todo: "Veggies", isChecked: true },
+  { id: 3, todo: "Bread", isChecked: false },
+  { id: 4, todo: "Veggies", isChecked: false },
 ];
 
 todoForm.onsubmit = function (event) {
